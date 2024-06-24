@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+import gdown
+
+# Correct Google Drive link
+url = "https://drive.google.com/uc?id=1aFmyhFUbepp3VCdANFeTarG81PjwqmvD"
+
+# Specify a valid download path
+output = "model.pt"
+
+gdown.download(url, output, fuzzy=True)

@@ -42,7 +42,7 @@ tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
 # Load the saved model
 model = SentimentClassifier(n_classes=2)
-model.load_state_dict(torch.load('bert-sampling(16).pt', map_location=torch.device('cpu')))
+model.load_state_dict(torch.load('model.pt', map_location=torch.device('cpu')))
 model.eval()
 
 # Define FastAPI
